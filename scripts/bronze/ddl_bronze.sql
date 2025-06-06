@@ -63,3 +63,10 @@ CREATE TABLE bronze.erp_px_cat_g1v2(
 by using this command \copy table_name FROM 'file location'
 This command was used multiple times to load each file.
 */
+
+/*
+Note: Realised that the column name in crm_cust_info was named data instead of date, thus this sql command was used to rename the column 
+in a separate query.
+*/
+ALTER TABLE bronze.crm_cust_info
+RENAME COLUMN cst_create_data to cst_create_date;
