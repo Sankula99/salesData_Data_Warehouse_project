@@ -3,7 +3,8 @@
 DROP TABLES AND CREATE
 =========================================
 SCRIPT PURPOSE:
-This script drops tables if they existed prior to creating tables.
+This script defines the bronze schema, by creating tables and dropping tables if they already exists.
+Run this script to redefine the DDL Structure of the bronze schema tables.
 */
 
 DROP TABLE IF EXISTS bronze.crm_cust_info;
